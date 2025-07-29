@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Portfolio - Graphic Designer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body class="text-white font-sans bg-black">
+
+  <!-- 3D Background -->
+  <canvas id="bg"></canvas>
+
+  <!-- Content -->
+  <div class="relative z-10 min-h-screen flex flex-col items-center justify-center text-center px-4">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Jane Doe</h1>
+    <p class="text-xl mb-6">Graphic Designer | 3D Artist | Illustrator</p>
+    <a href="#portfolio" class="bg-blue-500 hover:bg-blue-700 px-6 py-3 rounded text-white text-lg">View Portfolio</a>
+  </div>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="relative z-10 bg-white text-black py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">My Work</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <img src="C:\Users\User\Desktop\065\nikil 3.webp" alt="Work 1" class="rounded shadow-md" />
+      <img src="C:\Users\User\Desktop\065\nikil 3.webp" alt="Work 2" class="rounded shadow-md" />
+      <img src="C:\Users\User\Desktop\065\nikil 3.webp" alt="Work 3" class="rounded shadow-md" />
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
